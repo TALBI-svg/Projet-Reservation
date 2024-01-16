@@ -1,0 +1,176 @@
+/* Footer.css */
+
+:root {
+  --mobile-font-size: 20px;
+  --desktop-font-size: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "poppins", sans-serif; */
+}
+
+h1 {
+  font-size: var(--desktop-font-size);
+}
+
+a {
+  font-size: 16px;
+  /* Taille de police pour les liens sur tous les appareils */
+}
+
+label {
+  font-size: 18px;
+  /* Taille de police pour les labels sur tous les appareils */
+}
+
+footer h1 {
+  font-size: var(--mobile-font-size);
+  /* Taille de police pour les appareils mobiles */
+  margin-bottom: 8px;
+  /* Espacement en bas */
+}
+
+footer {
+  background-color: #ECF0F3;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer div {
+  flex: 1;
+  margin: 5px;
+}
+
+footer a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #9613AD;
+  text-decoration: underline;
+}
+
+#Coordonnees ul li b {
+  display: flex;
+  /* flex-direction: row; */
+
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer #Liens ul li {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+#Reseaux ul a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer label {
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+}
+
+footer input[type="email"] {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="email"]::placeholder {
+  font-weight: 500;
+}
+
+footer button[type="submit"] {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#Politique_de_confidentialite ul li {
+  display: flex;
+
+}
+
+#Options_de_langues select {
+  cursor: pointer;
+  padding: 7px;
+  width: 150px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#lien_carte_du_site a,
+#lien_conditions_generales a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#Copyright {
+  font-size: 17px;
+  background: linear-gradient(to right, #9933cc, #8e44ad);
+  /* Remplacez ces couleurs par celles de votre choix */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: #fff;
+  font-weight: 700;
+  padding: 25px !important;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--mobile-font-size);
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

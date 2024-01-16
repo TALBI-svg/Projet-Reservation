@@ -1,0 +1,43 @@
+CREATE DATABASE Authentification;
+
+USE Authentification;
+
+CREATE TABLE IF NOT EXISTS utilisateurs (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nomComplet VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    sel VARCHAR(255) NOT NULL,
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+L'utilisation d'un "sel" (ou "salt" en anglais) dans les systèmes d'authentification est une pratique de sécurité courante pour renforcer la protection des mots de passe stockés. 
+Le sel est une valeur aléatoire unique générée pour chaque utilisateur et concaténée au mot de passe avant le hachage. Voici comment cela fonctionne et pourquoi c'est important :
+
+1. Génération du sel : Lorsqu'un utilisateur crée un compte ou change son mot de passe, un sel aléatoire est généré pour cet utilisateur. 
+Le sel est une chaîne de caractères aléatoire et unique.
+
+2. Concaténation du sel : Le sel est ensuite concaténé (ajouté) au mot de passe de l'utilisateur. Par exemple, si le sel est "abc123" et le mot de passe est "motdepasse123",
+le mot de passe sera transformé en "abc123motdepasse123".
+
+3. Hachage : Le mot de passe avec le sel concaténé est ensuite haché à l'aide d'un algorithme de hachage sécurisé tel que bcrypt. 
+Le résultat est le hachage du mot de passe, qui est stocké dans la base de données.
+
+4. Stockage : Le sel est également stocké dans la base de données, généralement avec le hachage du mot de passe.
+
+Lorsque l'utilisateur tente de se connecter, le même sel est extrait de la base de données, concaténé au mot de passe qu'il fournit,
+puis le résultat est haché et comparé au hachage stocké dans la base de données. Si les hachages correspondent, l'authentification est réussie.
+
+L'importance de l'utilisation du sel réside dans le fait qu'elle renforce la sécurité en rendant les attaques par force brute plus difficiles.
+Même si deux utilisateurs ont le même mot de passe, le sel garantit que leurs hachages seront différents en raison de l'ajout du sel unique. 
+Cela signifie que les attaquants ne peuvent pas utiliser des tables de hachage prédéfinies pour trouver les mots de passe d'utilisateurs, car chaque hachage est unique.
+
+En résumé, l'importation du sel dans un système d'authentification est une bonne pratique de sécurité pour protéger les mots de passe des utilisateurs et renforcer la sécurité des comptes.
+Cela rend plus difficile pour les attaquants de compromettre les mots de passe des utilisateurs.
+
+CREATE TABLE avis (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255) NOT NULL,
+    note INT NOT NULL,
+    commentaire TEXT NOT NULL,
+    date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

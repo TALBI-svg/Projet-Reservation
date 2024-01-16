@@ -1,0 +1,24 @@
+										Un diagramme de cas d'utilisation avec les éléments suivants :
+
+1. **Acteurs :**
+   - **Client :** Représente les personnes qui réservent des chambres d'hôtel.
+   - **Réceptionniste :** Représente le personnel de l'hôtel qui gère les réservations.
+
+2. **Cas d'utilisation :**
+   - **Rechercher des chambres :** Le client peut rechercher des chambres disponibles en spécifiant des critères tels que la date d'arrivée, la date de départ et le type de chambre.
+   - **Effectuer une réservation :** Le client peut réserver une chambre après avoir trouvé une chambre disponible qui répond à ses critères.
+   - **Annuler une réservation :** Le client peut annuler une réservation existante s'il le souhaite.
+   - **Enregistrer une arrivée :** Le réceptionniste peut enregistrer l'arrivée d'un client.
+   - **Gérer les réservations :** Le réceptionniste peut gérer les réservations, y compris la modification et l'annulation.
+
+3. **Relations :**
+   - Le client initie les cas d'utilisation de recherche, réservation et annulation.
+   - Le réceptionniste est impliqué dans les cas d'utilisation d'enregistrement d'arrivée et de gestion des réservations.
+
+4. **Associations :**
+   - Des associations entre les acteurs et les cas d'utilisation pour montrer qui est impliqué dans chaque interaction.
+
+5. **Système :**
+   - La boîte représentant le système (l'hôtel) entoure les cas d'utilisation et les acteurs.
+
+Ces éléments de base vous donneront une idée de la structure d'un diagramme de cas d'utilisation pour un système de réservation d'hôtel dans le langage de modélisation UML.

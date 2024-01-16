@@ -1,0 +1,60 @@
+CREATE TABLE chambres (
+    id_chambre INT PRIMARY KEY,
+    type_chambre VARCHAR(50) NOT NULL,
+    prix_nuit DECIMAL(10, 2) NOT NULL CHECK (prix_nuit > 0),
+    description TEXT NOT NULL,
+    disponible BOOLEAN NOT NULL CHECK (disponible IN (true, false))
+);
+
+CREATE TABLE reservations (
+    id_reservation INT AUTO_INCREMENT PRIMARY KEY,
+    id_chambre INT,
+    nomComplet_client VARCHAR(255) NOT NULL,
+    adresse_email VARCHAR(255) NOT NULL,
+    numero_telephone VARCHAR(20) NOT NULL,
+    date_depart DATE NOT NULL,
+    date_arrivee DATE NOT NULL,
+    nombre_personnes INT NOT NULL,
+    type_chambre VARCHAR(50) NOT NULL,
+    options_supplementaires TEXT NOT NULL,
+    montant_total DECIMAL(10, 2) NOT NULL,
+    CONSTRAINT fk_chambre_reservation FOREIGN KEY (id_chambre) REFERENCES chambre (id_chambre)
+);
+
+Bien sûr, voici une vue d'ensemble des étapes de validation de la réservation d'une chambre, présentée de manière préventive :
+
+### Étape Préventive de Validation pour la Réservation d'une Chambre :
+
+1. **Vérification de la Sélection de la Chambre :**
+   - Prévenir les erreurs en s'assurant que l'utilisateur a sélectionné une chambre avant de poursuivre.
+
+2. **Validation des Dates de Séjour :**
+   - Prévenir les erreurs en vérifiant que la date de départ est antérieure à la date d'arrivée.
+   - Assurer que les dates de séjour sont dans le futur.
+
+3. **Vérification du Nombre de Personnes :**
+   - Prévenir les erreurs en s'assurant que l'utilisateur a spécifié un nombre de personnes pour la réservation.
+   - Assurer que le nombre de personnes est raisonnable pour la chambre sélectionnée.
+
+4. **Validation des Options Supplémentaires :**
+   - Prévenir les erreurs en vérifiant que les options supplémentaires sélectionnées sont valides et disponibles.
+
+5. **Vérification des Informations Utilisateur :**
+   - Prévenir les erreurs en vérifiant les informations de l'utilisateur, en s'assurant qu'elles sont correctes et à jour.
+
+6. **Validation des Conditions Générales :**
+   - Prévenir les erreurs en s'assurant que l'utilisateur a accepté les conditions générales de réservation.
+
+7. **Vérification de la Disponibilité de la Chambre :**
+   - Prévenir les erreurs en utilisant la fonction de vérification de disponibilité pour s'assurer que la chambre est disponible.
+
+8. **Validation du Prix Total :**
+   - Prévenir les erreurs en calculant correctement le prix total en fonction des dates de séjour, du type de chambre et des options supplémentaires.
+
+9. **Validation du Processus de Paiement :**
+   - Prévenir les erreurs en vérifiant que le processus de paiement est opérationnel et que les détails de paiement fournis sont valides.
+
+10. **Préparation pour la Confirmation :**
+    - Prévenir les erreurs en préparant les données pour la confirmation finale de la réservation.
+
+L'approche préventive consiste à anticiper les erreurs potentielles à chaque étape du processus de réservation et à mettre en place des vérifications appropriées pour les éviter. Cela contribue à offrir une expérience utilisateur fluide et à réduire le risque d'erreurs ou d'incohérences dans les données.

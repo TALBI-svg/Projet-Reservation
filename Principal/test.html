@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Tahoma, Arial, Helvetica, Helvetica, sans-serif;
+      }
+      #contenu-2 {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: fit-content;
+        height: fit-content;
+      }
+      #info-chambre {
+        margin-top: -15px;
+        margin-bottom: -15px;
+        display: flex;
+        gap: 12px;
+        & div {
+          display: flex;
+          align-items: center;
+          & p:hover {
+            color: green;
+            transition: 0.5s;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container-reservation-chambre">
+      <div>
+        <!-- images  -->
+      </div>
+      <div>
+        <div id="contenu-2">
+          <h3>Appartement Premium</h3>
+          <div id="info-chambre">
+            <div>
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/nolan/64/men-age-group-3.png"
+                alt="men-age-group-3"
+              />
+              <p>+2 pers.</p>
+            </div>
+            <div>
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/nolan/64/bed.png"
+                alt="bed"
+              />
+              <p>1 chambre</p>
+            </div>
+            <div>
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/nolan/64/home-page.png"
+                alt="home-page"
+              />
+              <p>50 m<sup>2</sup></p>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>Wi-Fi Gratuit</li>
+              <li>
+                Situé au bord du lac et près de la promenade, des magasins et
+                activités
+              </li>
+              <li>Grandes fenêtres pour un maximum de lumière</li>
+              <li>Cuisine américaine entièrement équipée</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- Infos réservations -->
+      </div>
+    </div>
+  </body>
+</html>

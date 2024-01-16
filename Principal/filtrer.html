@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 20px;
+      }
+
+      input,
+      button {
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      /* Style pour le message "Personne n'est pas trouvé" */
+      .table-message {
+        color: #ff0000;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="filtrer" />
+    <button onclick="Filtrer()">Filtrer</button>
+    <table border="1"></table>
+    <script>
+      function Filtrer() {
+        let filtrer = document.getElementById("filtrer").value;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+        xhr.send();
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            var responseData = JSON.parse(xhr.responseText);
+            responseData.map((element, index) =>
+              console.log(element)
+            );
+            let personneTrouvee = false;
+            let tableContent =
+              "<tr><th>userId</th><th>id</th><th>title</th><th>body</th></tr>";
+
+            for (let i = 0; i < responseData.length; i++) {
+              if (responseData[i].id == filtrer) {
+                personneTrouvee = true;
+                tableContent += `
+                  <tr>
+                    <td>${responseData[i].userId}</td>
+                    <td>${responseData[i].id}</td>
+                    <td>${responseData[i].title}</td>
+                    <td>${responseData[i].body}</td>
+                  </tr>
+                `;
+                break; // Sortir de la boucle une fois qu'une correspondance est trouvée
+              }
+            }
+
+            if (personneTrouvee) {
+              document.querySelector("table").innerHTML = tableContent;
+            } else {
+              document.querySelector("table").innerHTML =
+                "Personne n'est pas trouvé";
+            }
+          } else {
+            console.error(
+              "La requête a échoué. Statut de la requête : " + xhr.status
+            );
+          }
+        };
+        xhr.onerror = function () {
+          console.error("Erreur réseau lors de la requête.");
+        };
+      }
+    </script>
+  </body>
+</html>

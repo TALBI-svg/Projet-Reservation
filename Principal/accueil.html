@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styleAccueil.css">
+  <link rel="stylesheet" href="/Footer/Footer.css">
+  <title>Page d'accueil</title>
+  <style>
+body{
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+  /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+
+
+
+
+}
+  </style>
+</head>
+
+<body>
+  <!-- header de la page web -->
+  <header>
+    <div id="container_header">
+      <div>
+        <h1 class="animated-heading">MRINI Elegance Hotel</h1>
+      </div>
+
+      <div>
+        <nav>
+          <ul>
+            <li><a href="/Formulaire_reservation/chambre/chambre.php">Chambres</a></li>
+            <li><a href="#equipements">Équipements</a></li>
+            <li><a href="#offres">Offres</a></li>
+            <li><a href="/Contact/contact.html">Contact</a></li>
+            <li><a href="/avis_client/avis.html">Avis Clients</a></li>
+          </ul>
+        </nav>
+        <button id="loginButton">
+          <span>
+            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" id="imag_connexion"
+              alt="user--v1" />
+        </button>
+        </span>
+      </div>
+    </div>
+    <div id="divConnexion">
+      <button id="connecter" onclick="connecter()">Se connecter</button>
+      <button id="inscrire" onclick="inscrire()">S'inscrire</button>
+    </div>
+  </header>
+  <!--  -->
+  <!--  -->
+
+
+
+  <!--  -->
+  <!--  -->
+  <div id="Info">
+    <div class="text-overlay">
+      <h1>Bienvenue dans notre hôtel</h1>
+      <p id="paraBienvenue">
+        Nous sommes heureux de vous accueillir! Si vous avez besoin d'aide,
+        veuillez effectuer une recherche
+      </p>
+      <input type="search" name="search" id="search" class="search-input" placeholder="Recherche..." />
+    </div>
+    <div class="image-container">
+      <img src="/Imgs/testImageInfo.webp" alt="imgNotFound" class="overlapping-image" />
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+
+  <!--  -->
+  <!--  -->
+  <div>
+    <h1 id="h1_image">Vue d'ensemble de l'Hôtel</h1>
+  </div>
+  <!--  -->
+  <!--  -->
+  <section class="overview">
+    <div class="features">
+      <h1>Caractéristiques de l'Hôtel</h1>
+      <ul>
+        <li>Piscine panoramique avec vue imprenable</li>
+        <li>Spa et centre de bien-être de classe mondiale</li>
+        <li>Restaurant gastronomique avec plats locaux et internationaux</li>
+        <li>Connexion Wi-Fi haut débit dans tout l'établissement</li>
+        <li>Salles de réunion et d'événements élégantes</li>
+      </ul>
+    </div>
+  </section>
+  <!--  -->
+  <!--  -->
+
+  <!--  -->
+  <!--  -->
+  <div>
+    <h1 id="styleInfoMarcher">Comment ça marche</h1>
+  </div>
+  <div id="Info_hotel">
+    <div id="Remis_des_cles">
+      <div class="left-div">
+        <span>Remis des clés</span>
+      </div>
+      <div>
+        <img id="image_chevron_1" width="30" height="30" src="https://img.icons8.com/nolan/64/expand-arrow.png"
+          alt="expand-arrow" />
+      </div>
+    </div>
+    <div id="Para_1">
+      <p>
+        Vous pourrez vous mettre d'accord directement avec votre hôte pour
+        savoir comment récupérer les clés, que ce soit en le retrouvant sur
+        place ou en utilisant un coffre <br />
+        sécurisé. Vous accéderez ainsi à votre hébergement facilement et
+        pourrez commencer votre séjour !
+      </p>
+    </div>
+    <div id="hr"></div>
+    <div id="Communication_avec_votre_hotel">
+      <div class="left-div">
+        <span>Communication avec votre hôtel</span>
+      </div>
+      <div>
+        <img id="image_chevron_2" width="30" height="30" src="https://img.icons8.com/nolan/64/expand-arrow.png"
+          alt="expand-arrow" />
+      </div>
+    </div>
+    <div id="Para_2">
+      <p>
+        Vous pouvez contacter votre hôte à tout moment pour toute question
+        concernant votre séjour, que ce soit pour l'informer de votre heure
+        d'arrivée ou pour faire une <br />
+        demande spéciale. Communiquez en toute simplicité !
+      </p>
+    </div>
+    <div id="hr"></div>
+    <div id="Enregistrement">
+      <div class="left-div">
+        <span>Enregistrement</span>
+      </div>
+      <div>
+        <img id="image_chevron_3" width="30" height="30" src="https://img.icons8.com/nolan/64/expand-arrow.png"
+          alt="expand-arrow" />
+      </div>
+    </div>
+    <div id="Para_3">
+      <p>
+        Vous avez peut-être toujours séjourné dans des hôtels et vous demandez
+        comment se passe l'enregistrement dans un appartement ou une maison de
+        vacances. Rassurez-vous,<br />
+        d'autres voyageurs sont dans votre cas. C'est pourquoi votre hôte vous
+        fournira toutes les informations dont vous avez besoin pour votre
+        séjour.
+      </p>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+
+  <div id="divContenuProteger" class="animated-box-shadow">
+    <span>
+      <img width="30" height="30" src="https://img.icons8.com/nolan/64/private2.png" alt="private2" id="imgSecure" />
+    </span>
+    <span>Ce contenu protégé </span>
+  </div>
+
+  <!--  -->
+  <!--  -->
+
+  <!-- Footer -->
+  <!--  -->
+  <footer>
+    <div id="Coordonnees">
+      <h1>Coordonnées de l'hôtel :</h1>
+      <ul>
+        <li><b>Adresse physique :</b> p123 Rue de l'Hôtel, Ville Imaginaire, Pays Fictif</li>
+        <li><b>Numéro de téléphone :</b> +212626489487</li>
+        <li><b>Adresse e-mail :</b> reserver.hôtel@gmail.com </li>
+      </ul>
+    </div>
+    <div id="Liens">
+      <h1>Liens rapides :</h1>
+      <ul>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+          <a href="#accueil">Accueil</a>
+        </li>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+          <a href="#chambres">Chambres</a>
+        </li>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+          <a href="#tarifs">Tarifs</a>
+        </li>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+          <a href="#services">Services</a>
+        </li>
+        <li><img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a href="#contact">Contact</a>
+        </li>
+        <li><img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a href="#reservation">Réservations</a></li>
+      </ul>
+
+    </div>
+    <div id="Reseaux">
+      <h1>Réseaux sociaux :</h1>
+      <div>
+        <ul>
+          <!-- Remplacez les liens "#" par les liens vers les profils réels de l'hôtel sur les réseaux sociaux -->
+          <span>
+            <li><a href="#"><img width="35" height="35" src="https://img.icons8.com/nolan/64/facebook-new.png"
+                  alt="facebook-new" />
+                Facebook</a></li>
+          </span>
+          <span>
+            <li><a href="#"><img width="35" height="35" src="https://img.icons8.com/nolan/64/instagram-new.png"
+                  alt="instagram-new" />
+                Instagram</a></li>
+          </span>
+          <span>
+            <li><a href="#"><img width="35" height="35" src="https://img.icons8.com/nolan/64/whatsapp.png"
+                  alt="whatsapp" /> Whatsapp</a></li>
+          </span>
+        </ul>
+      </div>
+    </div>
+    <div id="Newsletter">
+      <h1>Newsletter :</h1>
+      <form id="subscriptionForm" action="" method="post" onsubmit="verifier(event)">
+        <label for="email">Inscrivez-vous à notre newsletter :</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse e-mail...">
+        <button type="submit">S'abonner</button>
+      </form>
+    </div>
+    <div id="Politique_de_confidentialite">
+      <h1>Politique de confidentialité et mentions légales :</h1>
+      <ul>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a
+            href="lien_politique_confidentialite">Politique de confidentialité</a>
+        </li>
+        <li>
+          <img width="22" height="22"
+            src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+            alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+          <a href="lien_mentions_legales">Mentions légales</a>
+        </li>
+      </ul>
+    </div>
+    <div id="Options_de_langues">
+      <h1>Options de langues :</h1>
+      <label for="langue">Choisissez votre langue :</label>
+      <select id="langue" name="langue">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+        <option value="ar">Arabe</option>
+        <!-- Ajoutez d'autwres options de langue si nécessaire -->
+      </select>
+    </div>
+    <div id="lien_carte_du_site">
+      <h1>Carte du site :</h1>
+      <p>Pour consulter la carte du site, veuillez cliquer sur le lien ci-dessous :</p>
+      <a href="lien_carte_du_site">Carte du site</a>
+    </div>
+    <div id="lien_conditions_generales">
+      <h1>Conditions générales d'utilisation :</h1>
+      <p>Pour consulter les conditions générales d'utilisation, veuillez cliquer sur le lien ci-dessous :</p>
+      <a href="lien_conditions_generales">Conditions générales d'utilisation</a>
+    </div>
+  </footer>
+  <div id="Copyright">
+    <p>&copy; <strong id="annee"></strong> MRINI Elegance Hotel. Tous droits réservés.</p>
+  </div>
+  <!--  -->
+  <!--  -->
+  <script>
+  </script>
+  </div>
+  <script src="cdn.jsdelivr.net_npm_sweetalert2@11.7.18_dist_sweetalert2.all.min copy.js"></script>
+  <script src="accueil.js"></script>
+  <script src="buttonLogin&Signup.js"></script>
+  <script src="/Footer/Footer.js"></script>
+  <script src="avertissement.js"></script>
+</body>
+
+</html>

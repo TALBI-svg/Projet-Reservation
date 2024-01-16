@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclure les liens vers les icônes de médias sociaux -->
+    <script src="cdn.jsdelivr.net_npm_sweetalert2@11.7.18_dist_sweetalert2.all.min copy.js"></script>
+    <link rel="stylesheet" href="Footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <footer>
+        <div id="Coordonnees">
+            <h1>Coordonnées de l'hôtel :</h1>
+            <ul>
+                <li><b>Adresse physique :</b> p123 Rue de l'Hôtel, Ville Imaginaire, Pays Fictif</li>
+                <li><b>Numéro de téléphone :</b> +212626489487</li>
+                <li><b>Adresse e-mail :</b> reserver.hôtel@gmail.com </li>
+            </ul>
+        </div>
+        <div id="Liens">
+            <h1>Liens rapides :</h1>
+            <ul>
+                <li>
+                    <!-- <span> -->
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+                    <a href="#accueil">Accueil</a>
+                    <!-- </span> -->
+                </li>
+                <li>
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+                    <a href="#chambres">Chambres</a>
+                </li>
+                <li>
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+                    <a href="#tarifs">Tarifs</a>
+                </li>
+                <li>
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+                    <a href="#services">Services</a>
+                </li>
+                <li><img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a href="#contact">Contact</a>
+                </li>
+                <li><img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a
+                        href="#reservation">Réservations</a></li>
+            </ul>
+
+        </div>
+        <div id="Reseaux">
+            <h1>Réseaux sociaux :</h1>
+            <div>
+                <ul>
+                    <!-- Remplacez les liens "#" par les liens vers les profils réels de l'hôtel sur les réseaux sociaux -->
+                    <span>
+                        <li><a href="#"><img width="35" height="35"
+                                    src="https://img.icons8.com/nolan/64/facebook-new.png" alt="facebook-new" />
+                                Facebook</a></li>
+                    </span>
+                    <span>
+                        <li><a href="#"><img width="35" height="35"
+                                    src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new" />
+                                Instagram</a></li>
+                    </span>
+                    <span>
+                        <li><a href="#"><img width="35" height="35" src="https://img.icons8.com/nolan/64/whatsapp.png"
+                                    alt="whatsapp" /> Whatsapp</a></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        <div id="Newsletter">
+            <h1>Newsletter :</h1>
+            <form id="subscriptionForm" action="" method="post" onsubmit="verifier(event)">
+                <label for="email">Inscrivez-vous à notre newsletter :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse e-mail...">
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+        <div id="Politique_de_confidentialite">
+            <h1>Politique de confidentialité et mentions légales :</h1>
+            <ul>
+                <li>
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" /><a
+                        href="lien_politique_confidentialite">Politique de confidentialité</a>
+                </li>
+                <li>
+                    <img width="22" height="22"
+                        src="https://img.icons8.com/external-flat-glyph-papa-vector/78/external-Right-Double-Arrow-ui-flat-glyph-papa-vector.png"
+                        alt="external-Right-Double-Arrow-ui-flat-glyph-papa-vector" />
+                    <a href="lien_mentions_legales">Mentions légales</a>
+                </li>
+            </ul>
+        </div>
+        <div id="Options_de_langues">
+            <h1>Options de langues :</h1>
+            <label for="langue">Choisissez votre langue :</label>
+            <select id="langue" name="langue">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="ar">Arabe</option>
+                <!-- Ajoutez d'autres options de langue si nécessaire -->
+            </select>
+        </div>
+        <div id="lien_carte_du_site">
+            <h1>Carte du site :</h1>
+            <p>Pour consulter la carte du site, veuillez cliquer sur le lien ci-dessous :</p>
+            <a href="lien_carte_du_site">Carte du site</a>
+        </div>
+        <div id="lien_conditions_generales">
+            <h1>Conditions générales d'utilisation :</h1>
+            <p>Pour consulter les conditions générales d'utilisation, veuillez cliquer sur le lien ci-dessous :</p>
+            <a href="lien_conditions_generales">Conditions générales d'utilisation</a>
+        </div>
+    </footer>
+    <div id="Copyright">
+        <p>&copy; <strong id="annee"></strong> Votre Nom d'Entreprise. Tous droits réservés.</p>
+    </div>
+
+    <script src="Footer.js"></script>
+</body>
+
+</html>

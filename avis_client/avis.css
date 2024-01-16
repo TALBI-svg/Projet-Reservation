@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.review {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.rating {
+  color: #ffd700;
+  /* Couleur or pour les étoiles */
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#styleAucunAvis {
+  color: red;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#add-review h2 {
+  text-align: center;
+  background-clip: text;
+  background-image: linear-gradient(to right, #d02020, #f83600, #f9d423);
+  color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}

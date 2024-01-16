@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleChambres.css" />
+    <title>Liste des Chambres</title>
+  </head>
+  <body>
+    <div id="Contenu_image">
+      <div id="contenu_image_1">
+        <img src="../imageChambres/image_1.webp" class="chambreImage" alt="" />
+        <h4>Nom de la chambre 1:</h4>
+        <span>Information</span>
+        <div class="margin">
+          <span>Á partir de :</span> 
+          <span class="prix">
+            <?php
+            // Chemin vers le fichier JSON
+            $chemin_fichier_json = 'dataImages.json';
+            
+            // Lire le contenu du fichier JSON
+            $jsonContenu = file_get_contents($chemin_fichier_json);
+            
+            // Convertir la chaîne JSON en tableau associatif
+            $data = json_decode($jsonContenu, true);
+            
+            if ($data === null) {
+                echo "Erreur lors du décodage du JSON.";
+            } else {
+                $id_chambre = $data[0]['id_chambre'];
+            }
+
+            
+            require "connectionBaseDeDonnees.php";
+            $id_chambre = $id_chambre ;
+            $requete = $pdo->prepare("SELECT prix_nuit FROM chambres WHERE id_chambre = :id_chambre");
+            $requete->bindParam(':id_chambre', $id_chambre, PDO::PARAM_INT);
+            $requete->execute();
+            $resultat = $requete->fetch(PDO::FETCH_ASSOC);
+            // Affichage du prix_nuit
+            if ($resultat) {
+            echo $resultat['prix_nuit'];
+            } else {
+            echo "Chambre non trouvée.";
+            }
+      ?>
+          </span>
+          <span class="mad">MAD</span>
+        </div>
+        <div>
+          <button data-id="1" class="button-reservation">Réserver</button>
+        </div>
+      </div>
+      <div id="contenu_image_2">
+        <img src="../imageChambres/image_2.webp" class="chambreImage" alt="" />
+        <h4>Nom de la chambre 2:</h4>
+        <span>Information</span>
+        <div class="margin">
+          <span>Á partir de :</span> <span class="mad">MAD</span>
+          <span class="prix">1900 Dh</span>
+        </div>
+        <div>
+          <button data-id="2" class="button-reservation">Réserver</button>
+        </div>
+      </div>
+      <div id="contenu_image_3">
+        <img src="../imageChambres/image_3.webp" class="chambreImage" alt="" />
+        <h4>Nom de la chambre 3:</h4>
+        <span>Information</span>
+        <div class="margin">
+          <span>Á partir de :</span> <span class="mad">MAD</span>
+          <span class="prix">2000 Dh</span>
+        </div>
+        <div>
+          <button data-id="3" class="button-reservation">Réserver</button>
+        </div>
+      </div>
+      <div id="contenu_image_4">
+        <img src="../imageChambres/image_4.webp" class="chambreImage" alt="" />
+        <h4>Nom de la chambre 4:</h4>
+        <span>Information</span>
+        <div class="margin">
+          <span>Á partir de :</span> <span class="mad">MAD</span>
+          <span class="prix">2100 Dh</span>
+        </div>
+        <div>
+          <button data-id="4" class="button-reservation">Réserver</button>
+        </div>
+      </div>
+    </div>
+    <!-- Formulaire caché pour envoyer l'ID de la chambre via POST -->
+    <form id="reservationForm" action="../Formulaire_reservation/reserver.php" method="post">
+      <input type="hidden" name="idChambre" id="idChambre" />
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var chambreContainers = document.querySelectorAll("[data-id]");
+
+        chambreContainers.forEach(function (chambreContainer) {
+          chambreContainer.addEventListener("click", function () {
+            var idChambre = this.getAttribute("data-id");
+            document.getElementById("idChambre").value = idChambre;
+            document.getElementById("reservationForm").submit();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+

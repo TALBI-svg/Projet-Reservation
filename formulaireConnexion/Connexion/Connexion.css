@@ -1,0 +1,177 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#centrer_fomulaire {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.wrapper .title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 90px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.wrapper form {
+    padding: 25px 30px 50px 30px;
+}
+
+
+.wrapper form .field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.wrapper form .field input:focus {
+    border-color: #4158d0;
+}
+
+.wrapper form .field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.wrapper form .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.wrapper form .content #remember_me {
+    cursor: pointer;
+    color: #555;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    font-size: 17px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+.wrapper form .field input~label {
+    top: 0;
+    font-size: 15px;
+    color: #4158d0;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+
+.wrapper form .field button {
+    width: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.wrapper form .field button:hover {
+    /* background: linear-gradient(-135deg, #4158d0, #c850c0); */
+    transform: scale(0.97);
+
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    color: #555;
+}
+
+.wrapper form .signup-link a {
+    text-decoration: none;
+    color: #4158d0;
+}
+
+.wrapper form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les messages d'erreur */
+#messageErrorEmail,
+#messageErrorMotDePasse {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    /* display: flex;
+    align-items: center; */
+}
+
+#divErrorMere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px; */
+    /* margin: 1px */
+    margin-left: 5px;
+}
+
+#divErrorMere #messageErrorEmail,
+#messageErrorMotDePasse {
+    margin-left: 5px;
+}
+
+.warning {
+    display: none;
+}

@@ -1,0 +1,28 @@
+regexNom = /^[a-zA-Z\s]{3,}$/ :
+
+[a-zA-Z\s] : Classe de caractères qui correspond à une lettre de l'alphabet (majuscule ou minuscule) ou un espace.
+{3,} : Quantificateur qui indique que le motif précédent [a-zA-Z\s] doit se répéter au moins trois fois.
+$ : Fin de la chaîne.
+regexTelephone =/^(\+212|0)[567][0-9]{8}$/;
+___________________________________________________________________________________________________________________________
+regexEmail = /.+@gmail.com$/ :
+
+.+ : Correspond à un ou plusieurs caractères de n'importe quel type (sauf les sauts de ligne). Le point . représente n'importe quel caractère,
+et le quantificateur + signifie "un ou plusieurs".
+
+@ : Représente simplement le caractère "@".
+gmail.com : Correspond exactement à la chaîne de caractères "gmail.com".
+$ : Représente la fin de la chaîne.
+___________________________________________________________________________________________________________________________
+regexTelephone =/^(\+212|0)[567][0-9]{8}$/ :
+
+(\+212|0) : Groupe de capture pour correspondre soit au préfixe international "+212" soit au préfixe national "0".
+[567] : Correspond à un seul chiffre qui peut être 5, 6 ou 7, les trois premiers chiffres du numéro de téléphone que vous recherchez.
+[0-9]{8} : Correspond à huit chiffres de 0 à 9 (les huit chiffres restants du numéro de téléphone).
+___________________________________________________________________________________________________________________________
+regex_nombre_personnes = /^[1-9]+$/ :
+
+^ : Le symbole caret indique le début de la chaîne.
+[1-9] : Cette partie correspond au premier chiffre qui doit être compris entre 1 et 9 inclusivement.
+[0-9]* : Cela signifie qu'après le premier chiffre, on peut avoir zéro ou plusieurs chiffres supplémentaires de 0 à 9.
+$ : Le symbole dollar indique la fin de la chaîne
