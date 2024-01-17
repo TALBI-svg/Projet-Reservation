@@ -38,10 +38,10 @@
               </ul>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">login</a>
+                  <a class="nav-link" href="./formulaireConnexion/Connexion/ConnexionSite.php">login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-primary" href="#">Signup</a>
+                  <a class="btn btn-primary" href="./formulaireConnexion/Signup/Formulaire d'inscription.php">Signup</a>
                 </li>
               </ul> 
             </div>
@@ -83,8 +83,8 @@
                 <div class="col-12 col-md-0 col-lg-6 right-area d-flex justify-content-end pe-1 pt-3">
                     <img src="./assets/images/bg_home2.jpg" class="rounded leftside" alt="bg_home">
                     <div class="rightside me-2">
-                        <img src="./assets/images/bg_home1.jpg" class="rounded ms-1 mb-1 img-fluid" alt="bg_home">
-                        <img src="./assets/images/bg_home3.jpg" class="rounded ms-1 img-bottom" alt="bg_home">
+                        <img src="./assets/images/image_3.webp" class="rounded ms-1 mb-1 img-fluid" alt="bg_home">
+                        <img src="./assets/images/image_4.webp" class="rounded ms-1 img-bottom" alt="bg_home">
                     </div>
                 </div>
             </div>
