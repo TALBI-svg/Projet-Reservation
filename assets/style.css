@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ========= Home page (navbar area, wlecome area) ========= */
 /* 0D6EFD */
 .container-fluid .navbar-brand{
     font-size: 20px;
@@ -72,7 +73,34 @@
     object-fit: cover;
 }
 
-/* ======================== HOME PAGE MEDIA QUERY ======================== */
+/* ========= Home page (rooms area) ========= */
+.Rooms{
+    height: 93vh;
+}
+/* images-container */
+.carousel  .carousel-inner .room-img{
+    height: 300px;
+    max-width: 306px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.carousel  .carousel-inner .room-img:hover{
+    opacity: 0.8;
+}
+.carousel .pt-3 .carousel-control-prev,.carousel .pt-3 .carousel-control-next{
+    background: #fff;
+    border-radius: 25px;
+    height: 50px;
+    max-width: 50px;
+    margin: auto 0px;
+}
+
+
+
+
+
+
+/* ========= Home page media query (navbar area, wlecome area) ========= */
 @media only screen and (max-width: 1865px){
     .Welcome .left-area .feedback-area{
         position: relative;

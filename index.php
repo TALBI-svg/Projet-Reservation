@@ -89,6 +89,99 @@
                 </div>
             </div>
         </section>
+        <!-- rooms area -->
+        <section class="Rooms mx-5 px-3">
+            <div class="row">
+              <div class="col-12 col-md-4 mx-auto">
+                <h1 class="fw-bold">Choose your luxurious room</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sit.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mx-auto">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="card">
+                      <div class="d-flex images-container rounded">
+                        <a href="#">
+                          <img src="./assets/images/rooms_home1.jpg" class="room-img" alt="...">
+                        </a>
+                        <a href="#"> 
+                          <img src="./assets/images/rooms_home2.jpg" class="room-img" alt="...">
+                        </a>
+                        <a href="#"> 
+                          <img src="./assets/images/rooms_home3.jpg" class="room-img" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                        <p class="card-text">We offer our customers standard rooms because their comfort interests us.</p>
+                        <p class="btn btn-primary">Show more</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="card">
+                      <div class="d-flex images-container rounded">
+                        <a href="#">
+                          <img src="./assets/images/rooms_home4.jpg" class="room-img" alt="...">
+                        </a>
+                        <a href="#">
+                          <img src="./assets/images/rooms_home5.jpg" class="room-img" alt="...">
+                        </a>
+                        <a href="#">
+                          <img src="./assets/images/rooms_home6.jpg" class="room-img" alt="...">
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Medium</h5>
+                        <p class="card-text">We offer our customers medium rooms because their comfort interests us.</p>
+                        <p class="btn btn-primary">Show more</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="card">
+                      <div class="d-flex images-container rounded">
+                      <a href="#">
+                        <img src="./assets/images/rooms_home7.jpg" class="room-img" alt="...">
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/rooms_home8.jpg" class="room-img" alt="...">
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/rooms_home9.jpg" class="room-img" alt="...">
+                      </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">VIP</h5>
+                        <p class="card-text">We offer our customers <span class="text text-warning">vip</span> rooms because their comfort interests us.</p>
+                        <p class="btn btn-primary">Show more</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-3">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
