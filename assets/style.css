@@ -1,77 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ========= Home page (navbar area, wlecome area) ========= */
 /* 0D6EFD */
-.container-fluid .navbar-brand{
-    font-size: 20px;
-    font-weight: bold;
+.container-fluid .navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
 }
-.container-fluid .navbar .nav-link{
-    font-weight: 400;
-    font-size: 15px;
+.container-fluid .navbar .nav-link {
+  font-weight: 400;
+  font-size: 15px;
 }
-.container-fluid .navbar .nav-link:hover{
-    color: #0D6EFD;
-    cursor: pointer;
+.container-fluid .navbar .nav-link:hover {
+  color: #0d6efd;
+  cursor: pointer;
 }
-.btn-primary:hover{
-    background: #fff;
-    color: #0D6EFD;
-    border: 1px solid #0D6EFD;
+.btn-primary:hover {
+  background: #fff;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
 }
-.Welcome{
-    height: 93vh;
+.Welcome {
+  height: 93vh;
 }
-.Welcome .left-area{
-    height: 93vh;
+.Welcome .left-area {
+  height: 93vh;
 }
-.Welcome .left-area .slugon-area{
-    font-size: 60px;
-    font-weight: bolder;
-    padding-top: 150px;
-    max-width: 60%;
+.Welcome .left-area .slugon-area {
+  font-size: 60px;
+  font-weight: bolder;
+  padding-top: 150px;
+  max-width: 60%;
 }
-.Welcome .left-area .subslugon-area{
-    font-size: 17px;
-    max-width: 60%;
-} 
-.Welcome .left-area .feedback-area{
-    position: relative;
-    top: -15px;
-    left: 70%;
-    max-width: 50%;
+.Welcome .left-area .subslugon-area {
+  font-size: 17px;
+  max-width: 60%;
 }
-.Welcome .left-area .feedback-area img{
-    height: 80px;
-    object-fit: contain;
-    max-width: 20%;
+.Welcome .left-area .feedback-area {
+  position: relative;
+  top: -15px;
+  left: 70%;
+  max-width: 50%;
+}
+.Welcome .left-area .feedback-area img {
+  height: 80px;
+  object-fit: contain;
+  max-width: 20%;
 }
 
+.Welcome .right-area .leftside {
+  height: 750px;
+  max-width: 400px;
+}
+.Welcome .right-area .rightside {
+  max-width: 400px;
+  object-fit: cover;
+}
+.Welcome .right-area .rightside img {
+  max-width: 400px;
+  height: 375px;
+  object-fit: cover;
+}
+.Welcome .right-area .rightside .img-bottom {
+  max-width: 400px;
+  height: 370px;
+  object-fit: cover;
+}
 
-.Welcome .right-area .leftside{
-    height: 750px;
-    max-width: 400px;
-}
-.Welcome .right-area .rightside{
-    max-width: 400px;
-    object-fit: cover;
-}
-.Welcome .right-area .rightside img{
-    max-width: 400px;
-    height: 375px;
-    object-fit: cover;
-}
-.Welcome .right-area .rightside .img-bottom{
-    max-width: 400px;
-    height: 370px;
-    object-fit: cover;
-}
 
 /* ========= Home page (rooms area) ========= */
 .Rooms{
@@ -152,21 +152,18 @@
         height: 300px;
         object-fit: cover;
     }
-}
-
-@media only screen and (max-width: 1130px){
-    .Welcome .left-area .slugon-area{
-        font-size: 30px;
-        font-weight: bolder;
-        padding-top: 80px;
-        max-width: 100%;
-    }
-    .Welcome .left-area .subslugon-area{
-        font-size: 17px;
-        max-width: 100%;
-    } 
-    .Welcome .right-area{
-        display: none !important;
-    }
-    
+@media only screen and (max-width: 1130px) {
+  .Welcome .left-area .slugon-area {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 80px;
+    max-width: 100%;
+  }
+  .Welcome .left-area .subslugon-area {
+    font-size: 17px;
+    max-width: 100%;
+  }
+  .Welcome .right-area {
+    display: none !important;
+  }
 }
