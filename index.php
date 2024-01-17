@@ -107,7 +107,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="card">
+                    <div class="card border-0">
                       <div class="d-flex images-container rounded">
                         <a href="#">
                           <img src="./assets/images/rooms_home1.jpg" class="room-img" alt="...">
@@ -119,15 +119,15 @@
                           <img src="./assets/images/rooms_home3.jpg" class="room-img" alt="...">
                         </a>
                       </div>
-                      <div class="card-body">
+                      <div class="card-body ps-1">
                         <h5 class="card-title">Standard</h5>
-                        <p class="card-text">We offer our customers standard rooms because their comfort interests us.</p>
+                        <p class="card-text">We offer our customers <span class="text text-primary">standard</span> rooms because their comfort interests us.</p>
                         <p class="btn btn-primary">Show more</p>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="card">
+                    <div class="card border-0">
                       <div class="d-flex images-container rounded">
                         <a href="#">
                           <img src="./assets/images/rooms_home4.jpg" class="room-img" alt="...">
@@ -139,15 +139,15 @@
                           <img src="./assets/images/rooms_home6.jpg" class="room-img" alt="...">
                         </a>
                       </div>
-                      <div class="card-body">
+                      <div class="card-body ps-1">
                         <h5 class="card-title">Medium</h5>
-                        <p class="card-text">We offer our customers medium rooms because their comfort interests us.</p>
+                        <p class="card-text">We offer our customers <span class="text text-success">medium</span> rooms because their comfort interests us.</p>
                         <p class="btn btn-primary">Show more</p>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="card">
+                    <div class="card border-0">
                       <div class="d-flex images-container rounded">
                       <a href="#">
                         <img src="./assets/images/rooms_home7.jpg" class="room-img" alt="...">
@@ -159,7 +159,7 @@
                         <img src="./assets/images/rooms_home9.jpg" class="room-img" alt="...">
                       </a>
                       </div>
-                      <div class="card-body">
+                      <div class="card-body ps-1">
                         <h5 class="card-title">VIP</h5>
                         <p class="card-text">We offer our customers <span class="text text-warning">vip</span> rooms because their comfort interests us.</p>
                         <p class="btn btn-primary">Show more</p>
@@ -177,6 +177,53 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <!-- services area -->
+        <section class="Services mx-5 px-3">
+            <div class="row pb-3">
+              <div class="col-12 col-md-4 mx-auto">
+                <h1 class="fw-bold">What Services, We Give You !</h1>
+              </div>
+            </div>
+            <div class="row pt-5 mx-auto d-flex justify-content-center">
+              <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card text text-center border-0 shadow" style="width: 19rem;">
+                  <div class="p-3 pt-3"><i class="rounded-circle p-3 bg-warning text text-white fa-solid fa-wifi"></i></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Free wifi</h5>
+                    <p class="card-text pb-4 fw-light">Stay connected effortlessly with complimentary high-speed WiFi, offering seamless browsing and uninterrupted connectivity throughout your stay</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card text text-center border-0 shadow" style="width: 19rem;">
+                  <div class="p-3 pt-3"><i class="rounded-circle p-3 bg-warning text text-white fa-solid fa-bath"></i></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Beauty & helth</h5>
+                    <p class="card-text pb-4 fw-light"> the overall state of physical, mental, and emotional well-being, while beauty pertains to physical appearance and aesthetics.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card text text-center border-0 shadow" style="width: 19rem;">
+                  <div class="p-3 pt-3"><i class="rounded-circle p-3 bg-warning text text-white fa-solid fa-headset"></i></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Team support</h5>
+                    <p class="card-text pb-4 fw-light">Providing prompt and attentive assistance, our team is dedicated to ensuring a seamless and enjoyable experience for all guests at our hotel.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                <div class="card text text-center border-0 shadow" style="width: 19rem;">
+                  <div class="p-3 pt-3"><i class="rounded-circle p-3 bg-warning text text-white fa-solid fa-person-hiking"></i></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Excursions</h5>
+                    <p class="card-text pb-4 fw-light">Excursions and guided tours Flower arrangement Ironing service Laundry and valet service Mail services Room service (24-hour)</p>
+                  </div>
                 </div>
               </div>
               </div>

@@ -95,8 +95,15 @@
     margin: auto 0px;
 }
 
+/* ========= Home page (services area) ========= */
+.Services{
+    height: 93vh;
+    margin-bottom: 50px;
+}
 
-
+.Services .card:hover{
+    cursor: pointer;
+}
 
 
 
